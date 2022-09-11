@@ -61,6 +61,7 @@ ul {
 .about {
 	margin: 0 52px 0 52px;
 	font-size: 1.5em;
+	text-align: center ;
 }
 
 .heading {
@@ -111,7 +112,7 @@ a {
 
 a:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: -10px;
+  bottom: -5px;
   content: "";
   display: block;
   height: 2px;
@@ -121,6 +122,11 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
+#para_link:after {
+	bottom: -2px;
+}
+
 a:hover:after { 
   width: 100%; 
   left: 0; 
