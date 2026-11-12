@@ -1,0 +1,1 @@
+{"$schema":"https://openapi.vercel.sh/vercel.json","framework":"jekyll","installCommand":"BUNDLE_PATH=vendor/bundle bundle install","buildCommand":"LANG=C.UTF-8 LC_ALL=C.UTF-8 RUBYOPT=-Eutf-8:utf-8 BUNDLE_PATH=vendor/bundle JEKYLL_ENV=production bundle exec jekyll build --trace","outputDirectory":"_site","git":{"deploymentEnabled":{"gh-pages":false}}}
