@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* -----------------------------------------------------------------------------
+ * Site override: burgundy accent.
+ * Everything above is a copy of al_folio_core's assets/css/main.scss; the theme
+ * colours are CSS custom properties, so they are re-declared here, after the
+ * theme partials, instead of overriding any gem-owned Sass partial.
+ * -------------------------------------------------------------------------- */
+:root,
+html[data-theme="light"] {
+  --global-theme-color: #800020;
+  --global-hover-color: #800020;
+  --global-code-bg-color: rgba(128, 0, 32, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #e58c9d;
+  --global-hover-color: #e58c9d;
+  --global-code-bg-color: #2c3237;
+}

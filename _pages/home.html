@@ -1,0 +1,52 @@
+---
+layout: default
+title: home
+permalink: /
+description: Abhiraj is a systems engineer who does research in distributed systems, storage and database security.
+announcements:
+  limit: 5 # number of news items shown on the home page
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title"><span class="font-weight-bold">Abhiraj</span></h1>
+    <p class="desc">Systems engineer and researcher · distributed systems, storage and database security</p>
+  </header>
+
+  <article>
+    <div class="clearfix">
+      <p>
+        I am an Engineering Analyst at Goldman Sachs, working on distributed systems for Listed Derivatives. Alongside that, I do research at PES
+        University: on <a href="{{ '/projects/' | relative_url }}">WR-Raft</a>, a Raft variant whose quorums adapt to follower storage latency, and on
+        timing side channels in row-level database security.
+      </p>
+      <p>
+        More <a href="{{ '/about/' | relative_url }}">about me</a>, my <a href="{{ '/experience/' | relative_url }}">experience</a>,
+        <a href="{{ '/projects/' | relative_url }}">projects</a> and <a href="{{ '/publications/' | relative_url }}">publications</a>.
+      </p>
+    </div>
+
+    <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
+    {% include news.liquid limit=true %}
+
+    <div class="social">
+      {% capture social_html %}{% social_links %}{% endcapture %}
+      <div class="contact-icons">{{ social_html | al_email_protect_html }}</div>
+    </div>
+
+  </article>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhiraj",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "jobTitle": "Engineering Analyst",
+    "worksFor": { "@type": "Organization", "name": "Goldman Sachs" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "PES University" },
+    "knowsAbout": ["Distributed systems", "Consensus protocols", "Storage systems", "Database security"],
+    "sameAs": ["https://github.com/{{ site.data.socials.github_username }}", "https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"]
+  }
+</script>

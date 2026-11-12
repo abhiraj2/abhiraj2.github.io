@@ -1,0 +1,8 @@
+# Social / contact links shown on the home page, in this order.
+# Supported keys: https://github.com/george-gca/jekyll-socials
+email: abhiraj.official15@gmail.com # obfuscated at build time (protect_email: true in _config.yml)
+github_username: abhiraj2
+linkedin_username: abhiraj-25a0ba202
+# scholar_userid: your-google-scholar-id
+# orcid_id: 0000-0000-0000-0000
+# dblp_url: https://dblp.org/pid/...
