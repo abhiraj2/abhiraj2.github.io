@@ -226,6 +226,7 @@ exclude:
   - purgecss.config.js
   - README.md
   - requirements.txt
+  - "*.HEIC"
   - readme_preview/
   - gems/
   - migrations/

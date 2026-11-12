@@ -14,6 +14,14 @@ announcements:
   </header>
 
   <article>
+    <div class="profile float-right">
+      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+      {%
+        include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" sizes=sizes alt="Abhiraj"
+        cache_bust=true
+      %}
+    </div>
+
     <div class="clearfix">
       <p>
         I am an Engineering Analyst at Goldman Sachs, working on distributed systems for Listed Derivatives. Alongside that, I do research at PES
