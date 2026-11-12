@@ -7,32 +7,70 @@ announcements:
   limit: 5 # number of news items shown on the home page
 ---
 
+<style>
+  /* Home hero: bio and photo side by side on wide screens, stacked on phones. */
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 250px;
+    column-gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .hero .post-header {
+    margin-bottom: 1rem;
+  }
+  .hero-photo figure {
+    margin: 0;
+  }
+  .hero-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+  @media (max-width: 767.98px) {
+    .hero {
+      grid-template-columns: 1fr;
+      row-gap: 1.25rem;
+    }
+    .hero-photo {
+      order: -1; /* photo first, then name and bio */
+      width: 180px;
+      max-width: 55%;
+      margin: 0 auto;
+    }
+    .hero-text {
+      text-align: left;
+    }
+  }
+</style>
+
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title"><span class="font-weight-bold">Abhiraj</span></h1>
-    <p class="desc">Systems engineer and researcher · distributed systems, storage and database security</p>
-  </header>
-
   <article>
-    <div class="profile float-right">
-      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-      {%
-        include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" sizes=sizes alt="Abhiraj"
-        cache_bust=true
-      %}
-    </div>
-
-    <div class="clearfix">
-      <p>
-        I am an Engineering Analyst at Goldman Sachs, working on distributed systems for Listed Derivatives. Alongside that, I do research at PES
-        University: on <a href="{{ '/projects/' | relative_url }}">WR-Raft</a>, a Raft variant whose quorums adapt to follower storage latency, and on
-        timing side channels in row-level database security.
-      </p>
-      <p>
-        More <a href="{{ '/about/' | relative_url }}">about me</a>, my <a href="{{ '/experience/' | relative_url }}">experience</a>,
-        <a href="{{ '/projects/' | relative_url }}">projects</a> and <a href="{{ '/publications/' | relative_url }}">publications</a>.
-      </p>
-    </div>
+    <section class="hero">
+      <div class="hero-text">
+        <header class="post-header">
+          <h1 class="post-title"><span class="font-weight-bold">Abhiraj</span></h1>
+          <p class="desc">Systems engineer and researcher · distributed systems, storage and database security</p>
+        </header>
+        <p>
+          I am an Engineering Analyst at Goldman Sachs, working on distributed systems for Listed Derivatives. Alongside that, I do research at PES
+          University: on <a href="{{ '/projects/' | relative_url }}">WR-Raft</a>, a Raft variant whose quorums adapt to follower storage latency, and
+          on timing side channels in row-level database security.
+        </p>
+        <p>
+          More <a href="{{ '/about/' | relative_url }}">about me</a>, my <a href="{{ '/experience/' | relative_url }}">experience</a>,
+          <a href="{{ '/projects/' | relative_url }}">projects</a> and <a href="{{ '/publications/' | relative_url }}">publications</a>.
+        </p>
+      </div>
+      <div class="hero-photo">
+        {%
+          include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded"
+          sizes="(min-width: 768px) 250px, 180px" alt="Abhiraj" cache_bust=true
+        %}
+      </div>
+    </section>
 
     <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
     {% include news.liquid limit=true %}

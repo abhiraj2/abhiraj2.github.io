@@ -21,4 +21,7 @@ __pycache__/
 *.pyc
 
 # Original photos; only the processed copies in assets/img are published
-*.HEIC
+/*.HEIC
+/*.jpeg
+/*.jpg
+/*.png

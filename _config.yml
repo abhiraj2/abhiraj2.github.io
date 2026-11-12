@@ -227,6 +227,7 @@ exclude:
   - README.md
   - requirements.txt
   - "*.HEIC"
+  - "*.jpeg"
   - readme_preview/
   - gems/
   - migrations/
