@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://abhiraj2.github.io/sitemap.xml
+Sitemap: https://theabhiraj.com/sitemap.xml
