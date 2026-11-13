@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research and engineering projects, in descending order of complexity.
+description: research and engineering projects, in descending order of complexity.
 nav: true
 nav_order: 3
 _styles: |

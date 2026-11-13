@@ -2,7 +2,7 @@
 layout: page
 title: publication(s)
 permalink: /publications/
-description: "Only one for now, more coming soon (^_^)"
+description: "only one for now, more coming soon ᕙ(`▽´)ᕗ"
 nav: true
 nav_order: 4
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: teaching
 permalink: /teaching/
-description: Teaching at PES University.
+description: teaching at PES University.
 nav: true
 nav_order: 5
 ---

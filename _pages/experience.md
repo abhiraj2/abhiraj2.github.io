@@ -2,7 +2,7 @@
 layout: page
 title: experience
 permalink: /experience/
-description: Industry and research roles, most recent first.
+description: industry and research roles, most recent first.
 nav: true
 nav_order: 2
 _styles: |
