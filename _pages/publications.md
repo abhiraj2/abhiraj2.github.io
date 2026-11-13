@@ -1,8 +1,8 @@
 ---
 layout: page
-title: publications
+title: publication(s)
 permalink: /publications/
-description: Peer-reviewed publications. Work in preparation is listed under projects until it is accepted.
+description: "Only one for now, more coming soon (^_^)"
 nav: true
 nav_order: 4
 ---

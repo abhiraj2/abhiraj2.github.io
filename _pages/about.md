@@ -7,9 +7,9 @@ nav: true
 nav_order: 1
 ---
 
-I am a systems engineer at Goldman Sachs, working on distributed systems for Listed Derivatives.
+I am an engineer at Goldman Sachs, working on distributed systems for Listed Derivatives.
 
-I love to tinker. Give me something that runs on many machines, many cores or many pixels at once, and I will happily take it apart to see how it works.
+I love to tinker. Give me something that runs on multiple machines, multiple cores or multiple pixels at once, and I will happily take it apart to see how it works.
 
 ## Education
 
