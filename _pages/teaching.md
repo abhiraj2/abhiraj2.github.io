@@ -1,21 +1,11 @@
 ---
 layout: page
-title: teaching & service
+title: teaching
 permalink: /teaching/
-description: Teaching, mentoring and service.
+description: Teaching at PES University.
 nav: true
 nav_order: 5
 ---
 
-## Teaching
-
-- **Teaching assistant** for Image Processing and Computer Vision (IPCV) and Cloud Computing and Big Data (CCBD) at PES University.
-- **Guest lectures** at PES University on cloud computing, version control and CI/CD.
-
-## Mentoring
-
-- Mentoring three interns on WR-Raft.
-
-## Service
-
-- Mock interviews for junior students.
+- **Teaching assistant** for Image Processing and Computer Vision (IPCV).
+- **Guest lectures** on cloud computing, Docker, version control and CI/CD.

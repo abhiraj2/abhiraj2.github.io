@@ -2,17 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Abhiraj · Systems & Databases Research" # used for <title>, feeds and schema; the navbar shows first_name only (see _includes/header.liquid)
+title: "Abhiraj · Systems Engineer" # used for <title>, feeds and schema; the navbar shows first_name only (see _includes/header.liquid)
 first_name: Abhiraj
 middle_name:
 last_name:
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Abhiraj is a systems engineer who does research in distributed systems, storage and database security.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Abhiraj, distributed systems, consensus, Raft, storage, database security, systems research # add your own keywords or leave empty
+  Abhiraj is a systems engineer who loves to tinker with distributed computing, heterogeneous parallelism and computer graphics.
+footer_text: # unused: the footer is removed (see _includes/footer.liquid)
+keywords: Abhiraj, systems engineer, distributed computing, heterogeneous parallelism, GPU, computer graphics # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🗄️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

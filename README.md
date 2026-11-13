@@ -13,7 +13,7 @@ Personal site of Abhiraj, built with [al-folio](https://github.com/alshedivat/al
 | Publications                       | `_bibliography/papers.bib` and `_pages/publications.md`      |
 | Contact links                      | `_data/socials.yml`                                          |
 | Accent colour (burgundy)           | end of `assets/css/main.scss`                                 |
-| Local theme overrides              | `_includes/header.liquid`, `_includes/news.liquid`           |
+| Local theme overrides              | `_includes/header.liquid`, `_includes/news.liquid`, `_includes/footer.liquid`           |
 
 ## Run locally
 
