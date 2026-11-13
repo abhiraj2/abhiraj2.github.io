@@ -20,7 +20,7 @@ _styles: |
 
 <div class="xp">
   <h2>Couchbase</h2>
-  <p class="xp-meta">Developer Intern · 2025</p>
+  <p class="xp-meta">Software Engineering Intern · 2025</p>
 </div>
 
 <div class="xp">

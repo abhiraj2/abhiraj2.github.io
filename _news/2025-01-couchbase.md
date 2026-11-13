@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Couchbase as a Developer Intern.
+Joined Couchbase as a Software Engineering Intern.
